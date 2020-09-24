@@ -16,6 +16,7 @@ public class TestServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.getWriter().println("Witaj Konrad w servlecie projektu UsersCRUD");
+        response.getWriter().println("Nowa linijka kodu");
 
     }
 }
