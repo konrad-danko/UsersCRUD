@@ -1,0 +1,16 @@
+
+W	java:S125%"<This block of commented-out lines of code should be removed.(Îö×^8…ÍÕ·Ì.
+]	java:S125'"<This block of commented-out lines of code should be removed.(Œê²Íùÿÿÿÿ8ü†Ö·Ì.
+W
+java:S1068"5Remove this unused "DELETE_USER_QUERY" private field.(şÌÿ€øÿÿÿÿ8Â„¿·Ì.
+]	java:S125#"<This block of commented-out lines of code should be removed.(µæé²úÿÿÿÿ8ííÎ·Ì.
+]	java:S125)"<This block of commented-out lines of code should be removed.(Î“èèşÿÿÿÿ8£×·Ì.
+P
+java:S1068	"3Remove this unused "READ_USER_QUERY" private field.(ğŞÃ8¸ Ñ·Ì.
+\
+java:S1118":Add a private constructor to hide the implicit public one.(Ìáúÿÿÿÿ8Â„¿·Ì.
+Z
+java:S1068"8Remove this unused "READ_ALL_USERS_QUERY" private field.(Ô²èúÿÿÿÿ8Â„¿·Ì.
+W
+java:S1068
+"5Remove this unused "UPDATE_USER_QUERY" private field.(ô›ºØÿÿÿÿÿ8Â„¿·Ì.

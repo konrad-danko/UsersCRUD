@@ -1,22 +1,28 @@
 package pl.coderslab.entity;
 
+import org.mindrot.jbcrypt.BCrypt;
+
 public class User {
-    private int id;
+    private long id;
     private String userName;
     private String email;
     private String password;
 
-    public User(int id, String userName, String email, String password) {
-        this.id = id;
+    public User() { }
+
+    public User(String userName, String email, String password) {
         this.userName = userName;
         this.email = email;
-        this.password = password;
+        //w konstruktorze od razu hashujemy hasło:
+        this.password = hashPassword(password);
     }
+    //metoda zwracająca zahashowane hasło:
+    public String hashPassword(String password) {return BCrypt.hashpw(password, BCrypt.gensalt());}
 
-    public int getId() {
+    public long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -34,10 +40,16 @@ public class User {
         this.email = email;
     }
 
+    //getter hasła zahashowanego:
     public String getPassword() {
         return password;
     }
-    public void setPassword(String password) {
+    //setter hasła zahashowanego:
+    public void setHashPassword (String password) {
         this.password = password;
+    }
+    //setter hashujący hasło:
+    public void setPassword(String password) {
+        this.password = hashPassword(password);
     }
 }

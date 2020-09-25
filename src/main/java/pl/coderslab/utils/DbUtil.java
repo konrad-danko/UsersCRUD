@@ -8,21 +8,21 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class DbUtil {
-    private static DataSource ds;
+    private static DataSource dataSource;
     public static Connection getConnection() throws SQLException {
         return getInstance().getConnection();   
     }
     private static DataSource getInstance() {
-        if(ds == null) {
+        if(dataSource == null) {
             try {
-                Context ctx = new InitialContext();
-                Context envContext = (Context) ctx.lookup("java:/comp/env");
-                ds = (DataSource)envContext.lookup("jdbc/workshop2");
+                Context initContext = new InitialContext();
+                Context envContext = (Context) initContext.lookup("java:/comp/env");
+                dataSource = (DataSource)envContext.lookup("jdbc/workshop2");
             } catch (NamingException e) {
                 e.printStackTrace();
             }
         }
-        return ds;
+        return dataSource;
     }
 }
 
