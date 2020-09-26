@@ -16,6 +16,15 @@ public class User {
         //w konstruktorze od razu hashujemy hasło:
         this.password = hashPassword(password);
     }
+
+    public User(long id, String userName, String email, String password) {
+        this.id = id;
+        this.userName = userName;
+        this.email = email;
+        //w konstruktorze od razu hashujemy hasło:
+        this.password = hashPassword(password);
+    }
+
     //metoda zwracająca zahashowane hasło:
     public String hashPassword(String password) {return BCrypt.hashpw(password, BCrypt.gensalt());}
 

@@ -1,10 +1,10 @@
 
-—
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î
-C
-java:S1481."-Remove this unused "response" local variable.(Î…©Ï
-M	java:S106/"9Replace this use of System.out or System.err by a logger.(åÈ¿b
-R
-java:S1854."<Remove this useless assignment to local variable "response".(Î…©Ï
-œ
-java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õ­¥Ûþÿÿÿÿ
+•
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î
+P
+java:S1854"<Remove this useless assignment to local variable "response".(Î…©Ï
+K	java:S106"9Replace this use of System.out or System.err by a logger.(åÈ¿b
+A
+java:S1481"-Remove this unused "response" local variable.(Î…©Ï
+š
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õ­¥Ûþÿÿÿÿ
