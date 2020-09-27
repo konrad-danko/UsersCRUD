@@ -77,7 +77,7 @@ public class UserDao {
         }
     }
 
-    private static final String READ_ALL_USERS_QUERY = "SELECT * FROM users ORDER BY username, email, id";
+    private static final String READ_ALL_USERS_QUERY = "SELECT * FROM users ORDER BY id, username, email";
     public static List<User> readAllUsers () {
         List<User> userList = new ArrayList<>();
         try(Connection conn = DbUtil.getConnection();
