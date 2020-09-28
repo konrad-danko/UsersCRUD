@@ -65,7 +65,7 @@ public class UserDao {
     }
 
     private static final String DELETE_USER_QUERY = "DELETE FROM users WHERE id=?";
-    public static boolean deleteUser (int userId) {
+    public static boolean deleteUser (long userId) {
         try(Connection conn = DbUtil.getConnection(); //******************************
         PreparedStatement prepStat = conn.prepareStatement(DELETE_USER_QUERY)){
             prepStat.setLong(1, userId);
