@@ -27,7 +27,7 @@ public class UserDao {
     }
 
     private static final String READ_USER_QUERY = "SELECT * FROM users WHERE id=?";
-    public static User readUser (int userId) {
+    public static User readUser (long userId) {
         try (Connection conn = DbUtil.getConnection();
         PreparedStatement prepStat = conn.prepareStatement(READ_USER_QUERY)) {
             prepStat.setLong(1, userId);

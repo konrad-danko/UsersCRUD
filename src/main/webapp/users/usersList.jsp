@@ -25,7 +25,7 @@
                     <th scope="row">${user.id}</th>
                     <td>${user.userName}</td>
                     <td>${user.email}</td>
-                    <td><a href="">Usuń</a> <a href="">Edytuj</a> <a href="">Pokaż</a></td>
+                    <td><a href="">Usuń</a> <a href="/user/edit?id=${user.id}">Edytuj</a> <a href="">Pokaż</a></td>
                 </tr>
             </c:forEach>
             </tbody>
