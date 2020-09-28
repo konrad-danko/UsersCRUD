@@ -17,9 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <%--    <link href="css/sb-admin-2.min.css" rel="stylesheet">--%>
+<%--    <link href="css/sb-admin-2.min.css" rel="stylesheet">--%>
     <link href="<c:url value="/theme/css/sb-admin-2.css"/>" rel="stylesheet">
-
 
 
 </head>
@@ -35,7 +34,7 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
+                <em class="fas fa-laugh-wink"></em>
             </div>
             <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
         </a>
@@ -47,7 +46,7 @@
         <li class="nav-item active">
             <%--<a class="nav-link" href="index.html">--%>
             <a class="nav-link" href="/user/list">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <em class="fas fa-fw fa-tachometer-alt"></em>
                 <span>Dashboard</span></a>
         </li>
 
@@ -341,7 +340,7 @@
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Projekt warsztatowy UsersCRUD</h1>
-                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
+                    <a href="/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
                 </div>
 
                 <%--                <!-- Content Row -->
