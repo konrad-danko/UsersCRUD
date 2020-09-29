@@ -1,5 +1,3 @@
-/*Zadanie 1 - rozwiązywane z wykładowcą
-Utwórz filtr, który będzie ustawiał kodowanie dla obiektu żądania i odpowiedzi na utf-8.*/
 
 package pl.coderslab.utils;
 

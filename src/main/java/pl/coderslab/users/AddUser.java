@@ -21,7 +21,6 @@ public class AddUser extends HttpServlet {
         
         user = UserDao.createUser(user);
         if (user == null || user.getId()==0) {
-            //przekierowanie do innego servletu:
             response.sendRedirect(request.getContextPath() + "/user/add");
         } else {
             response.sendRedirect(request.getContextPath() + "/user/list");

@@ -22,7 +22,6 @@ public class EditUser extends HttpServlet {
 
         boolean userUpdateResult = UserDao.updateUser(user);
         if (userUpdateResult) {
-            //przekierowanie do innego servletu:
             response.sendRedirect(request.getContextPath() + "/user/list");
         } else {
             response.sendRedirect(request.getContextPath() + "/user/edit?id=" + id);
