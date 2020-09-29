@@ -19,6 +19,7 @@ public class ShowUser extends HttpServlet {
         long id = Long.parseLong(request.getParameter("id"));
         User user = UserDao.readUser(id);
         request.setAttribute("user", user);
-        request.getRequestDispatcher("/users/showUser.jsp").forward(request, response);
+        request.setAttribute("displayParam", "showUser");
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

@@ -31,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/index.jsp">
             <div class="sidebar-brand-icon rotate-n-15">
                 <em class="fas fa-laugh-wink"></em>
             </div>
@@ -72,15 +72,28 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <div class="d-sm-flex align-items-end justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Projekt warsztatowy UsersCRUD</h1>
-                    <a href="/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
+                    <a href="/user/list" class="btn btn-sm btn-primary shadow-sm"> Pokaż użytkowników</a>
+                    <a href="/user/add" class="btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
                 </div>
 
             </div>
             <!-- /.container-fluid -->
-<%--Punkt podziału header / footer  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--%>
-<%--            <p>W to miejsce wstawiamy content</p>--%>
+            <%--Linia podziału header / footer  !!!!!!!!!!!!!!!!!!!!!!!!!!--%>
+            <c:if test="${displayParam=='usersList'}">
+                <%@ include file="/users/usersList.jsp"%>
+            </c:if>
+            <c:if test="${displayParam=='addUser'}">
+                <%@ include file="/users/addUser.jsp"%>
+            </c:if>
+            <c:if test="${displayParam=='editUser'}">
+                <%@ include file="/users/editUser.jsp"%>
+            </c:if>
+            <c:if test="${displayParam=='showUser'}">
+                <%@ include file="/users/showUser.jsp"%>
+            </c:if>
+
         </div>
         <!-- End of Main Content -->
 

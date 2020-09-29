@@ -5,7 +5,6 @@
     <title>Show a user</title>
 </head>
 <body>
-<%@ include file="/header.jsp" %>
 
 <div class="container">
     <div class="container shadow-lg p-4 mb-4 bg-white border rounded-lg">
@@ -29,6 +28,5 @@
     </div>
 </div>
 
-<%@ include file="/footer.jsp" %>
 </body>
 </html>

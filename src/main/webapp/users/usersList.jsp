@@ -5,7 +5,6 @@
     <title>Users list</title>
 </head>
 <body>
-<%@ include file="/header.jsp" %>
 
 <div class="container">
     <div class="container shadow-lg p-4 mb-4 bg-white border rounded-lg">
@@ -25,7 +24,11 @@
                     <th scope="row">${user.id}</th>
                     <td>${user.userName}</td>
                     <td>${user.email}</td>
-                    <td><a href="/user/delete?id=${user.id}">Usuń</a> <a href="/user/edit?id=${user.id}">Edytuj</a> <a href="/user/show?id=${user.id}">Pokaż</a></td>
+                    <td class="d-sm-flex justify-content-between">
+                        <a href="${pageContext.request.contextPath}/user/delete?id=${user.id}" class="btn btn-danger btn-sm shadow-sm">Usuń</a>
+                        <a href="${pageContext.request.contextPath}/user/edit?id=${user.id}" class="btn btn-warning btn-sm shadow-sm">Edytuj</a>
+                        <a href="${pageContext.request.contextPath}/user/show?id=${user.id}" class="btn btn-primary btn-sm shadow-sm">Pokaż</a>
+                    </td>
                 </tr>
             </c:forEach>
             </tbody>
@@ -33,6 +36,5 @@
     </div>
 </div>
 
-<%@ include file="/footer.jsp" %>
 </body>
 </html>

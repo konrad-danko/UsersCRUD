@@ -19,6 +19,7 @@ public class UserList extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<User> allUsersList = UserDao.readAllUsers();
         request.setAttribute("allUsersList", allUsersList);
-        request.getRequestDispatcher("/users/usersList.jsp").forward(request, response);
+        request.setAttribute("displayParam", "usersList");
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

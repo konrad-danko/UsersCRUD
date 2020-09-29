@@ -32,6 +32,7 @@ public class EditUser extends HttpServlet {
         long id = Long.parseLong(request.getParameter("id"));
         User user = UserDao.readUser(id);
         request.setAttribute("user", user);
-        request.getRequestDispatcher("/users/editUser.jsp").forward(request, response);
+        request.setAttribute("displayParam", "editUser");
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

@@ -5,7 +5,6 @@
     <title>Add user</title>
 </head>
 <body>
-<%@ include file="/header.jsp" %>
 
 <div class="container">
     <div class="container shadow-lg p-4 mb-4 bg-white border rounded-lg">
@@ -24,11 +23,10 @@
                 <label for="passwordInput">Hasło</label>
                 <input type="password" name="password" required class="form-control" id="passwordInput" placeholder="Hasło użytkownika">
             </div>
-            <button type="submit" class="btn btn-primary">Zapisz</button>
+            <button type="submit" class="btn btn-success">Zapisz</button>
         </form>
     </div>
 </div>
 
-<%@ include file="/footer.jsp" %>
 </body>
 </html>
